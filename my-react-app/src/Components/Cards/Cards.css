@@ -1,0 +1,158 @@
+/* Importing Google fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --accent-color: #3498db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #f0f9ff;
+}
+
+.container1 {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 15px auto;
+}
+
+
+.card-wrapper {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.card-item {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.card-link {
+    width: 100%;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    color: #5372F0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background: #DDE4FF;
+    padding: 8px 16px;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.badge.for-rent {
+    color: #B22485;
+    background-color: #D6F8D6;
+}
+
+.card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    margin: 30px 0 5px;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.btnCard {
+    border: none;
+    background: none;
+    display: inline-block;
+}
+
+/* Swiper Navigation and Pagination Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #5372F0 !important;
+}
+
+.swiper-pagination-bullet {
+    background: #5372F0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #5372F0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}

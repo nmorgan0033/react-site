@@ -1,0 +1,42 @@
+
+nav{
+    height: 10vh;
+    background-color: rgb(7, 36, 73);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10; /* FROM THIS LINE */
+    width: 100%;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0; /* TO THIS LINE, Explaning needed */
+}
+.icon{
+    display: flex;
+}
+.logo{
+    color: white;
+    cursor: default;
+    font-size: 2rem;
+}
+.links{
+    font-size: 1.5rem;
+    height: 17vh;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.links a:hover{
+    transition: all 300ms ease;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: red;
+}
