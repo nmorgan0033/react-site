@@ -9,7 +9,11 @@ p{
 }
 
 .wrapper {
-    position: relative;
+    display: flex; 
+    position: fixed; 
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%) scale(0); 
     width: 400px;
     height: 440px;
     background: transparent;
@@ -21,12 +25,12 @@ p{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
     transition: transform .5s ease, height .2s ease;
+    z-index: 9999; 
 }
 
 .wrapper.active-popup {
-    transform: scale(1);
+    transform:  scale(1);
 }
 
 .wrapper.active {
@@ -183,3 +187,4 @@ p{
 .login-register p a:hover{
     text-decoration: underline;
 }
+
